@@ -1,0 +1,28 @@
+.container{
+  height: 100vh;
+  width: 100%;
+  float: left;
+}
+
+.step-one {
+  background: #F6009B;
+
+}
+
+.step-one img {
+  height: 500px;
+  width: 375px;
+  margin: 0 auto;
+}
+
+.step-one h1 {
+  text-align: center;
+  margin-top: 5vh;
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.step-two {
+  background: #045CF2;
+}
