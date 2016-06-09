@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Dosis:400,600|Orbitron:400,500);
+
+body {
+  font-family: Orbitron;
+  background: url(http://www.ks95.com/wp-content/uploads/2014/04/80s.jpg) center / cover repeat;
+}
 .container{
   height: 100vh;
   width: 100%;
@@ -23,6 +29,45 @@
   font-weight: 700;
 }
 
+.step-one p {
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+
 .step-two {
   background: #045CF2;
+}
+
+
+.step-two img {
+  width: 50%;
+  float: left;
+  margin-top: 25%;
+}
+
+
+#container {
+  margin: 0px auto;
+  width: 500px;
+  height: 375px;
+  border: 10px #333 solid;
+  position: relative;
+}
+#videoElement {
+  width: 500px;
+  height: 375px;
+  background-color: #666;
+}
+#overlay{
+  width: 500px;
+  height: 375px;
+  background-image: url("Overlay.png");
+  background-size: cover;
+  position: absolute;
+  top:0;
+  left:0;
 }

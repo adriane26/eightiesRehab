@@ -11,27 +11,86 @@
       <source src="Survivor.ogg" type="audio/ogg">
       <source src="Survivor.mp3" type="audio/mpeg">
     </audio>
-    <div class="steps">
+
+
+
+        <div class="steps">
       <div class="container step-one">
 
           <h1>Get Eighties Rehabbed!</h1>
-            <img src="./img/before.jpg" />
+          <p>Step in front of our patented "80s-fier" to convert yourself to 80s glory! We give you an idea of what you’ll look like when you are done with our program</p>
+          <div id="container" >
+              <video autoplay="true" id="videoElement">
+
+              </video>
+              <div id="overlay">
+                  &nbsp;
+              </div>
+          </div>
+
+          <script>
+              var video = document.querySelector("#videoElement");
+
+              navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+
+              if (navigator.getUserMedia) {
+                  navigator.getUserMedia({video: true}, handleVideo, videoError);
+              }
+
+              function handleVideo(stream) {
+                  video.src = window.URL.createObjectURL(stream);
+              }
+
+              function videoError(e) {
+                  // do something
+              }
+          </script>
+
       </div>
 
 
       <div class="container step-two">
-
-
+        <div style="float:left; width: 50%;">
+          <h2  style="color: #ffffff; text-align: center; font-size: 48px;">
+            <u>Before</u>
+          </h2>
+          <img src="BeforeMan.png" />
+          <img src="BeforeWoman.png" />
+    </div>
+          <br />
+          <div style="float:left; width: 50%; text-align: center; font-size: 28px;">
+              <h2  style="color: #ffffff;">
+                  <u>After</u>
+              </h2>
+          <img src="AfterMan.png" />
+          <img src="AfterWoman.png" />
+</div>
 
       </div>
 
 
-      <div class="container"></div>
-      <div class="container"></div>
-      <div class="container"></div>
-      <div class="container"></div>
-      <div class="container"></div>
+
+      <!--<div class="container" style="">-->
+
+          <!--<img src="http://www.ks95.com/wp-content/uploads/2014/04/80s.jpg" />-->
+
+      <!--</div>-->
+            <div style="margin: 0 auto; text-align: center;">
+                <div style="background: #ffffff; padding: 10px 0; font-size: 18px; vertical-align: middle; line-height: 18px;">Get back to the 80's</div>
+                <img src="https://blog.eu.playstation.com/files/2011/09/13_09_2011_SMALL.png" /><br />
+                <div style="background: #ffffff; padding: 10px 0; font-size: 18px; vertical-align: middle; line-height: 18px;">Haircut</div>
+                <br />
+
+              <img src="https://s3-us-west-2.amazonaws.com/lmooweb-media/images/15110d36-e56c-491f-9ded-a78cda691533.jpg" />
+              <img src="http://24.media.tumblr.com/tumblr_ly635jZdee1qgi75ko1_500.png" /><br />
+
+                <div style="background: #ffffff; padding: 10px 0; font-size: 18px; vertical-align: middle; line-height: 18px;">Learn to love the 80s</div>
+              <img src="http://cdn1.viralheroes.com/wp-content/uploads/2015/03/80s-collage.jpg" /><br />
+                <div style="background: #ffffff; padding: 10px 0; font-size: 18px; vertical-align: middle; line-height: 18px;">Continue Loving the 80s</div>
+              <img src="https://havensworldrecordattempt.files.wordpress.com/2012/05/80s-fashion-for-teens.png" /><br />
+                <div style="background: #ffffff; padding: 10px 0; font-size: 18px; vertical-align: middle; line-height: 18px;">Take Boombox lessons.</div>
+              <img src="https://s-media-cache-ak0.pinimg.com/736x/44/3a/1a/443a1a4461f48d3a3612317e96abac58.jpg" /><br />
+            </div>
     </div>
-    <div id="nav"></div>
   </body>
 </html>
